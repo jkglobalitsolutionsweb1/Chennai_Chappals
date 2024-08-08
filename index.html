@@ -49,7 +49,7 @@
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                           <a class="nav-item nav-link" href="index.html">Home</a>
+                           <a style="color: #ff4e5b;" class="nav-item nav-link" href="index.html">Home</a>
                            <a class="nav-item nav-link" href="collection.html">Collection</a>
                            <a class="nav-item nav-link" href="shoes.html">Shoes</a>
                            <a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
@@ -88,7 +88,7 @@
 						<div class="banner_taital">
 							<h1 class="banner_text">New Running Shoes </h1>
 							<h1 class="mens_text"><strong>The Chennai Cheppals</strong></h1>
-							<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="lorem_text">At Chennai Chappals, we believe in bringing style, comfort, and quality to your feet. Located in the heart of the city, our store offers an extensive collection of shoes, slippers, and sandals for all ages and occasions. Whether you're looking for the perfect pair of formal shoes, casual slippers, or trendy sandals, we've got you covered. </p>
 							<button class="buy_bt">Buy Now</button>
 							<button class="more_bt">See More</button>
 						</div>
@@ -244,7 +244,7 @@
     </div>
 	<!-- new collection section end -->
 	<!-- New Arrivals section start -->
-    <div class="layout_padding gallery_section">
+    <div class="layout_padding gallery_section mb-5">
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-4">
@@ -377,49 +377,108 @@
     </div>
    	<!-- New Arrivals section end -->
    	<!-- contact section start -->
-    <div class="layout_padding contact_section">
-    	<div class="container">
-    		<h1 class="new_text"><strong>Contact Now</strong></h1>
-    	</div>
-    	<div class="container-fluid ram">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="email_box">
-                    <div class="input_main">
-                       <div class="container">
-                          <form action="/action_page.php">
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
+	   <div class="container-fluid pt-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 style="color: #0c0116;" class="text-uppercase mb-3" style="letter-spacing: 5px;"><b>Contact</b> </h5>
+                <h1 style="color: #ff4e5b; font-size: 40px;"><b>Contact For Any Query</b> </h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form bg-secondary rounded p-5">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control border-0 p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
                             </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone Numbar" name="Name">
+                            <div class="control-group">
+                                <input type="email" class="form-control border-0 p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
                             </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
+                            <div class="control-group">
+                                <input type="text" class="form-control border-0 p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
                             </div>
-                            
-                            <div class="form-group">
-                                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                            <div class="control-group">
+                                <textarea class="form-control border-0 py-3 px-4" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
                             </div>
-                          </form>   
-                       </div> 
-                       <div class="send_btn">
-                        <button class="main_bt">Send</button>
-                       </div>                   
+                            <div class="text-center">
+                                <button style="background-color: #0c0116;" class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                        
+                        
+                       
+                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                        <script>
+                            (function () {
+                                emailjs.init("nVL-ns9kz9MFYVYun"); // Replace with your EmailJS user ID
+                            })();
+                        
+                            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                                event.preventDefault(); // Prevent default form submission
+                                sendEmail(); // Call the sendEmail function
+                                sendMessage(); // Call the sendMessage function
+                            });
+                        
+                            function sendEmail() {
+                                var name = document.getElementById("name").value;
+                                var email = document.getElementById("email").value;
+                                var subject = document.getElementById("subject").value; // Ensure subject is captured correctly
+                                var message = document.getElementById("message").value;
+                        
+                                // Validate form fields (optional)
+                                if (name === "" || email === "" || subject === "" || message === "") {
+                                    alert("Please fill in all fields.");
+                                    return;
+                                }
+                        
+                                var templateParams = {
+                                    name: name,
+                                    email: email,
+                                    subject: subject, // Ensure subject field is correctly included
+                                    message: message
+                                };
+                        
+                                // Send email using EmailJS
+                                emailjs.send("service_dts8xgb", "template_ic0h7bf", templateParams)
+                                    .then(function(response) {
+                                        console.log("Email sent successfully", response.status, response.text);
+                                        alert("Your email has been sent successfully!");
+                                        document.getElementById("contactForm").reset(); // Reset form after successful submission
+                                    }, function(error) {
+                                        console.error("Email sending failed", error);
+                                        alert("Oops! Something went wrong with email sending. Please try again later.");
+                                    });
+                            }
+                        
+                            function sendMessage() {
+                                var phonenumber = "+9894924809"; // Replace with your WhatsApp phone number
+                                var name = document.getElementById("name").value;
+                                var email = document.getElementById("email").value;
+                        
+                                // Since other fields are not available in the form, adjust the message accordingly
+                                var whatsappMessage = "Name: " + name + "%0A" +
+                                                      "Email: " + email + "%0A" +
+                                                      "This message is sent via the contact form on our website.";
+                        
+                                var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(whatsappMessage);
+                        
+                                // Open WhatsApp in a new tab
+                                window.open(url, '_blank').focus();
+                            }
+                        </script>
+                        
+                        
+                        
+                        
                     </div>
-    		</div>
-    			</div>
-    			<div class="col-md-6">
-    				<div class="shop_banner">
-    					<div class="our_shop">
-    						<button class="out_shop_bt">Our Shop</button>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-
+                </div>
+            </div>
+        </div>
+    </div> 
 
 
 	
@@ -501,7 +560,8 @@
     	</div>
     </div>
 	<!-- section footer end -->
-	<div class="copyright">2019 All Rights Reserved.</div>
+	<div class="copyright">2019 All Rights Reserved @Chennai Chappals</div>
+
 
 
       <!-- Javascript files-->
