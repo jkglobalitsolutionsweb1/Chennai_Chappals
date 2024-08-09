@@ -1,246 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chennai Chappals - Shop Shoes & Chappals</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Reset */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-font-family: 'Arial', sans-serif;
-line-height: 1.6;
-background-color: #f4f4f4;
-color: #333;
-}
-
-/* Navbar */
-.navbar {
-background-color: #333;
-color: #fff;
-padding: 10px;
-text-align: center;
-}
-
-.navbar .logo {
-font-size: 24px;
-font-weight: bold;
-}
-
-.navbar ul {
-list-style: none;
-}
-
-.navbar ul li {
-display: inline;
-margin: 0 10px;
-}
-
-.navbar ul li a {
-color: #fff;
-text-decoration: none;
-font-size: 18px;
-}
-
-/* Hero Section */
-.hero-section {
-background-image: url('hero-bg.jpg');
-background-size: cover;
-background-position: center;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-text-align: center;
-animation: fadeIn 2s ease-in-out;
-}
-
-.hero-section .hero-content h1 {
-font-size: 48px;
-margin-bottom: 20px;
-animation: slideInLeft 2s ease-in-out;
-}
-
-.hero-section .hero-content p {
-font-size: 24px;
-margin-bottom: 20px;
-animation: slideInRight 2s ease-in-out;
-}
-
-.hero-section .hero-content .btn {
-padding: 10px 20px;
-background-color: #ff4500;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
-font-size: 18px;
-animation: bounceIn 2s ease-in-out;
-}
-
-/* Product Section */
-.product-section {
-padding: 50px 0;
-background-color: #fff;
-text-align: center;
-}
-
-.product-section h2 {
-font-size: 36px;
-margin-bottom: 20px;
-}
-
-.product-container {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.product-card {
-background-color: #f9f9f9;
-border: 1px solid #ddd;
-padding: 20px;
-margin: 10px;
-width: 200px;
-text-align: center;
-transition: transform 0.3s;
-}
-
-.product-card img {
-max-width: 100%;
-height: auto;
-margin-bottom: 15px;
-}
-
-.product-card h3 {
-font-size: 20px;
-margin-bottom: 10px;
-}
-
-.product-card p {
-font-size: 18px;
-margin-bottom: 15px;
-}
-
-.product-card button {
-padding: 10px;
-background-color: #333;
-color: #fff;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-
-.product-card:hover {
-transform: scale(1.05);
-}
-
-/* Footer */
-.footer {
-background-color: #333;
-color: #fff;
-text-align: center;
-padding: 20px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-0% {
-    opacity: 0;
-}
-100% {
-    opacity: 1;
-}
-}
-
-@keyframes slideInLeft {
-0% {
-    transform: translateX(-100%);
-}
-100% {
-    transform: translateX(0);
-}
-}
-
-@keyframes slideInRight {
-0% {
-    transform: translateX(100%);
-}
-100% {
-    transform: translateX(0);
-}
-}
-
-@keyframes bounceIn {
-0% {
-    transform: scale(0.5);
-}
-50% {
-    transform: scale(1.2);
-}
-100% {
-    transform: scale(1);
-}
-}
-
-    </style>
-</head>
-
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">Chennai Chappals</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Step into Comfort & Style</h1>
-            <p>Explore our exclusive collection of shoes and chappals</p>
-            <a href="#shop" class="btn">Shop Now</a>
-        </div>
-       
-    </header>
-
-    <!-- Product Section -->
-    <section id="shop" class="product-section">
-        <h2>Our Collection</h2>
-        <div class="product-container">
-            <div class="product-card">
-                <img src="" alt="Shoe 1">
-                <h3>Comfortable Sneakers</h3>
-                <p>₹1999</p>
-                <button>Add to Cart</button>
+<div class="container">
+    <!-- Add the h1 tag here -->
+    <h1>Men's Collection</h1>
+    
+    <div class="product-cards">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
             </div>
-            <div class="product-card">
-                <img src="chappal1.jpg" alt="Chappal 1">
-                <h3>Classic Chappals</h3>
-                <p>₹999</p>
-                <button>Add to Cart</button>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
             </div>
-            <!-- Add more products as needed -->
         </div>
-    </section>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 7 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 8 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 9 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <!-- Product Card 10 -->
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                    <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="product-info">
+                <h2>Product Title</h2>
+                <p>$99.99</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.product-card').forEach(card => {
+            const slides = card.querySelector('.slides');
+            const prevButton = card.querySelector('.prev');
+            const nextButton = card.querySelector('.next');
+            let currentIndex = 0;
 
-    <!-- Footer -->
-    <footer id="contact" class="footer">
-        <p>&copy; 2024 Chennai Chappals. All rights reserved.</p>
-    </footer>
+            function updateSlide() {
+                const slideWidth = slides.querySelector('.slide').offsetWidth;
+                slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+            }
 
-    <script src="script.js"></script>
-</body>
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.children.length - 1;
+                updateSlide();
+            });
 
-</html>
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex < slides.children.length - 1) ? currentIndex + 1 : 0;
+                updateSlide();
+            });
+
+            updateSlide(); // Initialize position
+        });
+    </script>
+</div>

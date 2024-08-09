@@ -50,7 +50,25 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                            <a style="color: #ff4e5b;" class="nav-item nav-link" href="index.html">Home</a>
-                           <a class="nav-item nav-link" href="collection.html">Collection</a>
+						   <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							  Collection
+							</a>
+							<div style="background-color: #ff4e5b;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a style="color: #0c0116;" class="dropdown-item" href="mens.html">Mens Collection</a>
+							  <a class="dropdown-item" href="womens.html">Womens Collection</a>
+							  <a class="dropdown-item" href="kids.html">Kids Collection</a>
+							</div>
+						  </li>
+						  <style>
+							/* Custom CSS for hover dropdown */
+							.dropdown:hover .dropdown-menu {
+							  display: block;
+							}
+							.dropdown-menu {
+							  margin-top: 0; /* Adjust as needed */
+							}
+						  </style>
                            <a class="nav-item nav-link" href="shoes.html">Shoes</a>
                            <a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
                            <a class="nav-item nav-link" href="contact.html">Contact</a>
@@ -168,6 +186,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- header section end -->
 	<!-- new collection section start -->
     <div class="layout_padding collection_section">
