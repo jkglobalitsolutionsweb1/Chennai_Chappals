@@ -8,8 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-	  <title>Chennai Chappals</title>
-
+      <title>Chennai Chappals</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -27,6 +26,7 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="css/owl.carousel.min.css">
+	  <link rel="stylesheet" href="./css/slicker.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <!--[if lt IE 9]>
@@ -34,415 +34,394 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout">
-	<!-- header section start -->
-	<div class="header_section header_main mb-4 ">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="logo"><a href="#"><img style="height: 80px;" src="images/Chennai Chappals Logo.png"></a></div>
-				</div>
-				<div class="col-sm-9">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                           <a style="color: #ff4e5b;font-size: 20px;" class="nav-item nav-link" href="index.html">Home</a>
-						   <li class="nav-item dropdown">
-							<a style="font-size: 20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							  Collection
-							</a>
-							<div style="background-color: #ff4e5b;" class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <a style="color: #0c0116;" class="dropdown-item" href="mens.html">Mens Collection</a>
-							  <a class="dropdown-item" href="womens.html">Womens Collection</a>
-							  <a class="dropdown-item" href="kids.html">Kids Collection</a>
-							</div>
-						  </li>
-						  <style>
-							/* Custom CSS for hover dropdown */
-							.dropdown:hover .dropdown-menu {
-							  display: block;
-							}
-							.dropdown-menu {
-							  margin-top: 0; /* Adjust as needed */
-							}
-						  </style>
-                           <a style="font-size: 20px;" class="nav-item nav-link" href="shoes.html">Shoes</a>
-                           <a style="font-size: 20px;" class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
-                           <a style="font-size: 20px;" class="nav-item nav-link" href="contact.html">Contact</a>
-                           <a style="font-size: 20px;" class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
-                           <a style="font-size: 20px;" class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
+
+
+	<div style="background-color: #0c0116;">
+		<div class="text-center d-lg-none">
+			<img src="./images/Chennai Chappals Logo.png" style="height: 80px;"  alt="">
+		</div>
+	
+		<nav class="navbar navbar-expand-lg navbar-light navbar-custom p-2">
+			<button style="background-color: #e01d37; color: white;" class="navbar-toggler ms-4 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav d-flex justify-content-around w-100  align-items-center">
+					<li class="d-none d-lg-block">
+						<img style="height: 70px;" src="./images/Chennai Chappals Logo.png" alt="">
+					</li>
+					<li class="nav-item">
+						<a style="color: #e01d37;" class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Collection
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="mens.html">Mens Collection</a></li>
+							<li><a class="dropdown-item" href="womens.html">Womens Collection</a></li>
+							<li><a class="dropdown-item" href="kids.html">Kids Collection</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+			
+		  
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+		  
+		 
+		  
+	</div>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	  .navbar-custom {
+		background-color: #0c0116;
+	  }
+	  .nav-link {
+		color: #f12a47;
+	  }
+	  .dropdown-menu {
+		background-color: #f12a47;
+	  }
+	  .dropdown-item {
+		color: white;
+	  }
+	  .dropdown-item:hover {
+		background-color: #e01d37;
+	  }
+	  .navbar-nav {
+		flex: 1;
+	  }
+	</style>
+        <main><main>
+            <style>
+                /* Scoped CSS for product cards inside <main> */
+                .main-product-cards {
+                    display: flex;
+                    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+                    justify-content: center; /* Center cards horizontally */
+                    margin: -16px; /* Negative margin to offset the margin on cards */
+                }
+        
+                .main-product-card {
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    width: calc(33.333% - 32px); /* 3 cards per row with margin adjustment */
+                    margin: 16px; /* Margin around each card */
+                    position: relative;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+                }
+        
+                .main-product-card:hover {
+                    transform: scale(1.05); /* Slight zoom effect */
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+                }
+        
+                .main-slider {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                }
+        
+                .main-slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+        
+                .main-slide {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                .main-slide img {
+                    width: 100%;
+                    height: auto; /* Ensure the image scales correctly */
+                    display: block;
+                }
+        
+                .main-button {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 10;
+                    font-size: 1.5em; /* Adjust font size for better clickability */
+                    opacity: 0; /* Hide buttons by default */
+                    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+                }
+        
+                .main-product-card:hover .main-prev,
+                .main-product-card:hover .main-next {
+                    opacity: 1; /* Show buttons on hover */
+                }
+        
+                .main-prev {
+                    left: 0;
+                }
+        
+                .main-next {
+                    right: 0;
+                }
+        
+                .main-product-info {
+                    padding: 16px;
+                    text-align: center;
+                    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for overlay effect */
+                }
+        
+                .main-product-info h2 {
+                    margin: 0 0 8px;
+                    font-size: 1.2em; /* Adjust font size for better readability */
+                }
+        
+                .main-product-info p {
+                    margin: 0;
+                    font-size: 1em; /* Adjust font size for better readability */
+                    color: #333;
+                }
+        
+                /* Hover effect for overlay and text color */
+                .main-product-card:hover .main-product-info {
+                    background: rgba(0, 0, 0, 0.1); /* Light overlay on the info section */
+                    color: #000; /* Change text color on hover */
+                }
+        
+                /* Ensure the overlay does not cover the slider buttons */
+                .main-product-card:hover .main-slider {
+                    z-index: 5; /* Keep slider buttons above overlay */
+                }
+        
+                /* Responsive adjustments */
+                @media (max-width: 1024px) {
+                    .main-product-card {
+                        width: calc(25% - 32px); /* 4 cards per row */
+                    }
+                }
+        
+                @media (max-width: 768px) {
+                    .main-product-card {
+                        width: calc(50% - 32px); /* 2 cards per row */
+                    }
+                }
+        
+                @media (max-width: 480px) {
+                    .main-product-card {
+                        width: 100%; /* 1 card per row */
+                    }
+                }
+            </style>
+        
+            <div class="container mt-5">
+                <p style="font-size: 35px;font-weight: 700; color: #0c0116;" class="text-center m-0"><b>Womens Collection</b></p>
+            </div>
+            <div class="container mt-4">
+                <div class="main-product-cards">
+                    <!-- Product Card 1 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 1</h2>
+                            <p>$99.99</p>
                         </div>
                     </div>
-                    </nav>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- New Arrivals section start -->
-     
-    
-   <style>
-    .product-cards {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    justify-content: center; /* Center cards horizontally */
-    margin: -16px; /* Negative margin to offset the margin on cards */
-}
-
-.product-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: calc(33.333% - 32px); /* 3 cards per row with margin adjustment */
-    margin: 16px; /* Margin around each card */
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
-}
-
-.product-card:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    height: auto; /* Ensure the image scales correctly */
-    display: block;
-}
-
-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-size: 1.5em; /* Adjust font size for better clickability */
-    opacity: 0; /* Hide buttons by default */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.product-card:hover .prev,
-.product-card:hover .next {
-    opacity: 1; /* Show buttons on hover */
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.product-info {
-    padding: 16px;
-    text-align: center;
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for overlay effect */
-}
-
-.product-info h2 {
-    margin: 0 0 8px;
-    font-size: 1.2em; /* Adjust font size for better readability */
-}
-
-.product-info p {
-    margin: 0;
-    font-size: 1em; /* Adjust font size for better readability */
-    color: #333;
-}
-
-/* Hover effect for overlay and text color */
-.product-card:hover .product-info {
-    background: rgba(0, 0, 0, 0.1); /* Light overlay on the info section */
-    color: #000; /* Change text color on hover */
-}
-
-/* Ensure the overlay does not cover the slider buttons */
-.product-card:hover .slider {
-    z-index: 5; /* Keep slider buttons above overlay */
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .product-card {
-        width: calc(25% - 32px); /* 4 cards per row */
-    }
-}
-
-@media (max-width: 768px) {
-    .product-card {
-        width: calc(50% - 32px); /* 2 cards per row */
-    }
-}
-
-@media (max-width: 480px) {
-    .product-card {
-        width: 100%; /* 1 card per row */
-    }
-}
-
-   </style>
-    <div class="container">
-        <p style="font-size: 35px;font-weight: 700; color: #0c0116;" class="text-center m-0"><b>Womens Collection</b> </p>
-      </div>
-   
-    <div class="container mt-4">
-     
-
-
-        <div class="product-cards">
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 2 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 2</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 3 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 3</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 4 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 4</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 4 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 5 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 5</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 5 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 6 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 6</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 6 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 7 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 7</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 7 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 8 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 8</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 8 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 9 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 9</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <!-- Product Card 9 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                    <!-- Product Card 10 -->
+                    <div class="main-product-card">
+                        <div class="main-slider">
+                            <div class="main-slides">
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
+                                <div class="main-slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
+                            </div>
+                            <button class="main-prev">&#10094;</button>
+                            <button class="main-next">&#10095;</button>
+                        </div>
+                        <div class="main-product-info">
+                            <h2>Product Title 10</h2>
+                            <p>$99.99</p>
+                        </div>
                     </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
                 </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
+                <script>
+                    document.querySelectorAll('.main-product-card').forEach(card => {
+                        const slides = card.querySelector('.main-slides');
+                        const prevButton = card.querySelector('.main-prev');
+                        const nextButton = card.querySelector('.main-next');
+                        let currentIndex = 0;
+        
+                        function updateSlide() {
+                            const slideWidth = slides.querySelector('.main-slide').offsetWidth;
+                            slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+                        }
+        
+                        prevButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.children.length - 1;
+                            updateSlide();
+                        });
+        
+                        nextButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex < slides.children.length - 1) ? currentIndex + 1 : 0;
+                            updateSlide();
+                        });
+        
+                        updateSlide(); // Initialize position
+                    });
+                </script>
             </div>
-            <!-- Product Card 10 -->
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
-                    </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
-                    </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 1"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 2"></div>
-                        <div class="slide"><img src="./images/nike shoe (2).jpg" alt="Product Image 3"></div>
-                    </div>
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="product-info">
-                    <h2>Product Title</h2>
-                    <p>$99.99</p>
-                </div>
-            </div>
-        </div>
-        <script>
-            document.querySelectorAll('.product-card').forEach(card => {
-                const slides = card.querySelector('.slides');
-                const prevButton = card.querySelector('.prev');
-                const nextButton = card.querySelector('.next');
-                let currentIndex = 0;
-
-                function updateSlide() {
-                    const slideWidth = slides.querySelector('.slide').offsetWidth;
-                    slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-                }
-
-                prevButton.addEventListener('click', () => {
-                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.children.length - 1;
-                    updateSlide();
-                });
-
-                nextButton.addEventListener('click', () => {
-                    currentIndex = (currentIndex < slides.children.length - 1) ? currentIndex + 1 : 0;
-                    updateSlide();
-                });
-
-                updateSlide(); // Initialize position
-            });
-        </script>
-    </div>
-    
-    
-    
-    
-   
-
-  
-   	<!-- New Arrivals section end -->
+        </main>
+        </main>
 	<!-- section footer start -->
-    <div class="section_footer my-4">
+    <div class="section_footer">
     	<div class="container">
     		<div class="mail_section">
     			<div class="row">
@@ -562,5 +541,6 @@ $('#myCarousel').carousel({
             });
         });
       </script> 
+	   </div>
    </body>
 </html>
