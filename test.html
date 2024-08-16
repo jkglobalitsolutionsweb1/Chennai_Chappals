@@ -1,95 +1,866 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    </head>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <header>
-            <style>
-                /* Show dropdown menu on hover for larger screens */
-                @media (min-width: 992px) { /* lg and up */
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <header>
+        <style>
+            /* Show dropdown menu on hover for larger screens */
+            @media (min-width: 992px) {
+
+                /* lg and up */
                 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
                     display: block;
                 }
+
                 .navbar-nav .nav-item.dropdown .dropdown-menu {
                     display: none;
                     position: absolute;
                 }
-                }
-          
-            </style>
-            <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light  w-100">
-                <div class="container-fluid">
+            }
+        </style>
+        <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light  w-100 mb-3 mb-lg-0">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img class="ms-4" style="height: 40px;" src="./images/The CHennai Chappals.png" alt="Logo">
+                    <img class="ms-4" style="height: 35px;" src="./images/The CHennai Chappals.png" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100 d-flex justify-content-around" >
-                    <li class="nav-item">
-                        <a style="font-weight: 700;color: black;" class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  style="font-weight: 700;color: black;" class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a  style="font-weight: 700;color: black;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a  style="font-weight: 700;color: black;" class="dropdown-item" href="#">Men's</a></li>
-                        <li><a  style="font-weight: 700;color: black;" class="dropdown-item" href="#">Women's</a></li>
-                        <li><a  style="font-weight: 700;color: black;" class="dropdown-item" href="#">Kid's</a></li>
-                        <li><a  style="font-weight: 700;color: black;" class="dropdown-item" href="#">Accessories</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a  style="font-weight: 700;color: black;" class="nav-link" href="#">Contact</a>
-                    </li>
+                    <ul class="navbar-nav w-100 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a style="font-weight: 700;color: black;" class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-weight: 700;color: black;" class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-weight: 700;color: black;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a style="font-weight: 700;color: black;" class="dropdown-item" href="#">Men's</a>
+                                </li>
+                                <li><a style="font-weight: 700;color: black;" class="dropdown-item" href="#">Women's</a>
+                                </li>
+                                <li><a style="font-weight: 700;color: black;" class="dropdown-item" href="#">Kid's</a>
+                                </li>
+                                <li><a style="font-weight: 700;color: black;" class="dropdown-item"
+                                        href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-weight: 700;color: black;" class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner -->
+        <!-- <div style="height:800px;  background-image: url(./images/banner\ 1.png); background-repeat: no-repeat; background-size: cover;" class="">
+            
+        </div> -->
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .slider-1 {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .row.mx-0 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .col-12,
+            .col-lg-6,
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .left-column,
+            .right-column {
+                padding: 0;
+                margin: 0;
+            }
+
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
+
+            .right-column img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .responsive-text {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .poppins-regular {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Responsive font sizes */
+            @media only screen and (max-width: 768px) {
+                .responsives-text {
+                    font-size: 25px !important;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .responsives-text {
+                    font-size: 20px !important;
+                }
+            }
+        </style>
+        <div id="slider-1" class="move slider-1 w-100 h-100">
+            <div class="row align-items-center mx-0">
+                <div class="col-12 col-lg-6 col-md-6 text-center left-column animated-left mb-4 mb-lg-0">
+                    <div class="container text-center d-flex justify-content-center">
+                        <div class="ms-md-4" style="text-align: left;">
+
+                            <h1 class="responsive-text">UNMATCHED</h1>
+                            <h1 class="responsive-text">COMFORT</h1>
+                            <h3 class="responsives-text">ALL DAY LONG</h3>
+                            <h4 class="poppins-regular d-none d-lg-block my-3">
+                                Experience the ultimate in comfort with <br>every step you take. Our shoes are
+                                <br>engineered for support and style.
+                            </h4>
+                            <h4 class="poppins-regular d-lg-none my-3">
+                                Experience the ultimate in comfort with every step you take. Our shoes are engineered
+                                for support and style.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row container px-0 my-3 ms-1">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh1.png" alt="" data-target="slider-1">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh2 (3).png" alt=""
+                                data-target="slider-2">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh3 (2).png" alt=""
+                                data-target="slider-3">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh4 (2).png" alt=""
+                                data-target="slider-4">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh5 (2).png" alt=""
+                                data-target="slider-5">
+                        </div>
+                        <div class="col d-none d-md-block"></div>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <main>
-             <!-- Navbar -->
-  
+
+                <div class="col-12 col-lg-6 col-md-6 right-column animated-right" style="pointer-events: none;">
+                    <img class="img-fluid" src="./images/main shoe.png" alt="">
+                </div>
+            </div>
+            <script>
+                document.querySelector('.right-column').addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevents the event from bubbling up
+                    event.preventDefault(); // Prevents the default action (e.g., navigation)
+                });
+            </script>
+        </div>
+
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .slider-2 {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .row.no-gutters {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .col-12,
+            .col-lg-6,
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .left-column,
+            .right-column {
+                padding: 0;
+                margin: 0;
+            }
+
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
 
 
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            .responsive-text {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .poppins-regular {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+        <div id="slider-2" class="move slider-2 d-none w-100 h-100">
+            <div class="row align-items-center justify-content-center no-gutters">
+                <div class="col-12 col-lg-6 col-md-6 text-center left-column animated-left mb-4 mb-lg-0">
+                    <div class="container text-center d-flex justify-content-center">
+                        <div class="" style="text-align: left;">
+                            <h1 class="responsive-text res">EXPRESS YOURSELF</h1>
+                            <style>
+                                /* Default font size for larger screens */
+                                .responsive-text.res {
+                                    font-size: 36px;
+                                    /* or your default size */
+                                }
+
+                                /* Font size for mobile and tablet modes */
+                                @media (max-width: 768px) {
+                                    .responsive-text.res {
+                                        font-size: 20px;
+                                    }
+                                }
+                            </style>
+
+
+                            <h1 class="responsive-text res">WITH EVERY STEP</h1>
+                            <h3 class="responsive-text res">STYLE THAT SPEAKS</h3>
+                            <h4 class="poppins-regular my-3 d-none d-lg-block">Turn heads wherever you go. Discover <br>
+                                the latest trends
+                                and timeless designs <br> in our new collection.</h4>
+                            <h4 class="poppins-regular my-3 d-block d-lg-none">Turn heads wherever you go. Discover the
+                                latest trends
+                                and timeless designs in our new collection.</h4>
+                        </div>
+                    </div>
+                    <div class="row container px-0 my-3 no-gutters">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh1 (2).png" alt=""
+                                data-target="slider-1">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh2.png" alt="" data-target="slider-2">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh3.png" alt="" data-target="slider-3">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh4.png" alt="" data-target="slider-4">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh5.png" alt="" data-target="slider-5">
+                        </div>
+                        <div class="col d-none d-md-block"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 right-column animated-right" style="pointer-events: none;">
+                    <img class="img-fluid" src="./images/main shoe 2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.right-column').addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevents the event from bubbling up
+                event.preventDefault(); // Prevents the default action (e.g., navigation)
+            });
+        </script>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .slider-3 {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .row.mx-0 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .col-12,
+            .col-lg-6,
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .left-column,
+            .right-column {
+                padding: 0;
+                margin: 0;
+            }
+
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
+
+            .right-column img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .responsive-text {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .poppins-regular {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Responsive font sizes */
+            @media only screen and (max-width: 768px) {
+                .responsives-text {
+                    font-size: 25px !important;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .responsives-text {
+                    font-size: 20px !important;
+                }
+            }
+        </style>
+
+
+        <div id="slider-3" class="move slider-3 d-none w-100 h-100">
+            <div class="row align-items-center mx-0">
+                <div class="col-12 col-lg-6 col-md-6 text-center left-column animated-left mb-4 mb-lg-0">
+                    <div class="container text-center d-flex justify-content-center">
+                        <div style="text-align: left;">
+                            <h1 class="responsive-text">PERFORMANCE</h1>
+                            <h1 class="responsive-text">YOU CAN TRUST</h1>
+                            <h3 class="responsives-text" style="font-size: 37px;">WITH YOUR EVERY MOVE</h3>
+                            <h4 class="poppins-regular my-3 d-none d-lg-block">
+                                Built to keep up with your active <br> lifestyle. High-performance footwear <br> that
+                                never lets you down.
+                            </h4>
+                            <h4 class="poppins-regular my-3 d-block d-lg-none">
+                                Built to keep up with your active lifestyle. High-performance footwear that
+                                never lets you down.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row container px-0 my-3 ms-1">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh1 (2).png" alt=""
+                                data-target="slider-1">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh2 (3).png" alt=""
+                                data-target="slider-2">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b3sh3.png" alt="" data-target="slider-3">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh4.png" alt="" data-target="slider-4">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh5.png" alt="" data-target="slider-5">
+                        </div>
+                        <div class="col d-none d-md-block"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 right-column animated-right" style="pointer-events: none;">
+                    <img class="img-fluid" src="./images/main shoe 3.png" alt="">
+                </div>
+            </div>
+            <script>
+                document.querySelector('.right-column').addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevents the event from bubbling up
+                    event.preventDefault(); // Prevents the default action (e.g., navigation)
+                });
+            </script>
+        </div>
+
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .slider-4 {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .row.mx-0 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .col-12,
+            .col-lg-6,
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .left-column,
+            .right-column {
+                padding: 0;
+                margin: 0;
+            }
+
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
+
+            .right-column img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .responsive-text {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .poppins-regular {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Responsive font sizes */
+            @media only screen and (max-width: 768px) {
+                .responsives-text {
+                    font-size: 25px !important;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .responsives-text {
+                    font-size: 20px !important;
+                }
+            }
+        </style>
+        <div id="slider-4" class="move slider-4 d-none w-100 h-100">
+            <div class="row align-items-center mx-0">
+                <div class="col-12 col-lg-6 col-md-6 text-center left-column animated-left mb-4 mb-lg-0">
+                    <div class="container text-center d-flex justify-content-center">
+                        <div style="text-align: left;">
+                            <h1 class="responsive-text ">STEP IN</h1>
+                            <h1 class="responsive-text res">WHERE TRADITION</h1>
+                            <h3 class="responsives-text">MEETS MODERN</h3>
+                            <h4 class="poppins-regular my-3 d-none d-lg-block">
+                                Discover the Perfect Balance of Fashion <br> and Function. From Everyday Essentials <br>
+                                to Special Occasions, Our Shoes Move <br> With You
+                            </h4>
+                            <h4 class="poppins-regular my-3 d-block d-lg-none">
+                                Discover the Perfect Balance of Fashion and Function. From Everyday Essentials to
+                                Special Occasions, Our Shoes Move With You
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row container px-0 my-3 ms-1">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh1 (2).png" alt=""
+                                data-target="slider-1">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh2 (3).png" alt=""
+                                data-target="slider-2">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh3.png" alt="" data-target="slider-3">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b4sh4.png" alt="" data-target="slider-4">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh5.png" alt="" data-target="slider-5">
+                        </div>
+                        <div class="col d-none d-md-block"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 right-column animated-right" style="pointer-events: none;">
+                    <img class="img-fluid" src="./images/main shoe 4.png" alt="">
+                </div>
+            </div>
+            <script>
+                document.querySelector('.right-column').addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevents the event from bubbling up
+                    event.preventDefault(); // Prevents the default action (e.g., navigation)
+                });
+            </script>
+        </div>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .slider-5 {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .row.mx-0 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .col-12,
+            .col-lg-6,
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .left-column,
+            .right-column {
+                padding: 0;
+                margin: 0;
+            }
+
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
+
+            .right-column img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .responsive-text {
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+            }
+
+            .poppins-regular {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Responsive font sizes */
+            @media only screen and (max-width: 768px) {
+                .responsives-text {
+                    font-size: 25px !important;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .responsives-text {
+                    font-size: 20px !important;
+                }
+            }
+        </style>
+
+        <div id="slider-5" class="move slider-5 d-none w-100 h-100">
+            <div class="row align-items-center mx-0">
+                <div class="col-12 col-lg-6 col-md-6 text-center left-column animated-left mb-4 mb-lg-0">
+                    <div class="container text-center d-flex justify-content-center">
+                        <div style="text-align: left;">
+                            <h1 class="responsive-text res" style="text-transform: uppercase;">Adventure Awaits</h1>
+                            <h1 class="responsive-text res" style="text-transform: uppercase;">with Kid's</h1>
+                            <h1 class="responsives-text " style="text-transform: uppercase;">Footwear!</h1>
+                            <h4 class="poppins-regular my-3 d-none d-lg-block">
+                                Find shoes that are as fun, colorful, and <br> exciting as your little ones!
+                            </h4>
+                            <h4 class="poppins-regular my-3 d-block d-lg-none">
+                                Find shoes that are as fun, colorful, and exciting as your little ones!
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row container px-0 my-3 ms-1">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh1 (2).png" alt=""
+                                data-target="slider-1">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/sh2 (3).png" alt=""
+                                data-target="slider-2">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh3.png" alt="" data-target="slider-3">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b2sh4.png" alt="" data-target="slider-4">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" height="70px" src="./images/b5sh5.png" alt="" data-target="slider-5">
+                        </div>
+                        <div class="col d-none d-md-block"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 right-column animated-right" style="pointer-events: none;">
+                    <img class="img-fluid" src="./images/main shoe 5.png" alt="">
+                </div>
+            </div>
+            <script>
+                document.querySelector('.right-column').addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevents the event from bubbling up
+                    event.preventDefault(); // Prevents the default action (e.g., navigation)
+                });
+            </script>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const sliders = document.querySelectorAll('.move');
+                const buttons = document.querySelectorAll('.row img');
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const targetSliderId = button.getAttribute('data-target');
+
+                        sliders.forEach(slider => {
+                            if (slider.id === targetSliderId) {
+                                slider.classList.remove('d-none');
+                            } else {
+                                slider.classList.add('d-none');
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .move {
+                transition: opacity 0.5s ease;
+            }
+
+            .d-none {
+                display: none;
+            }
+
+            .img-fluid {
+                cursor: pointer;
+            }
+        </style>
+
+        <style>
+            .move {
+                height: 100vh;
+                width: 100%;
+                background-image: url(./images/bann1.png);
+                background-size: cover;
+                /* Default styles */
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                .move {
+                    background-image: none;
+                    background-color: #ffffff;
+                    /* Set background color for tablet mode */
+                }
+
+                .left-column h1,
+                .left-column h3 {
+                    font-size: 35px;
+                }
+
+                .left-column h4 {
+                    font-size: 18px;
+                }
+
+                .container {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .row {
+                    margin: 0;
+                }
+
+                .left-column,
+                .right-column {
+                    padding: 0 15px;
+                }
+
+                .animated-left,
+                .animated-right {
+                    animation: none;
+                }
+            }
+
+            @keyframes slideInLeft {
+                from {
+                    opacity: 0;
+                    transform: translateX(-100%);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes slideInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(100%);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            .animated-left {
+                animation: slideInLeft 1s ease-in-out forwards;
+            }
+
+            .animated-right {
+                animation: slideInRight 1s ease-in-out forwards;
+            }
+
+            .responsive-text {
+                font-size: 50px;
+                font-weight: 900;
+                background: -webkit-linear-gradient(#7B4397, #DC2430);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0;
+            }
+
+            @media (max-width: 767px) {
+                .responsive-text {
+                    font-size: 30px;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                .responsive-text {
+                    font-size: 40px;
+                }
+            }
+
+            .responsives-text {
+                font-size: 50px;
+                font-weight: 700;
+                background: -webkit-linear-gradient(#7B4397, #DC2430);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0;
+            }
+
+            @media (max-width: 767px) {
+                .responsives-text {
+                    font-size: 30px;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                .responsives-text {
+                    font-size: 40px;
+                }
+            }
+
+            .poppins-regular {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+
+
+        <!-- banner -->
+      <div class="container my-4 p-lg-5 p-3">
+        <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-12 col-lg-3">
+                    <img class="img-fluid" src="./images/blue shoe.png" alt="">
+            </div>
+            <div class="col-12 col-lg-7 p-3 ms-lg-5">
+                    <h1 style="font-weight: 700;" >Dedicated to </h1>
+                    <h1 style="font-weight: 700;" > Quality and results</h1>
+                        <p style="font-weight: 600;">At Chennai Chappals, we believe that footwear is more than just a necessity—it's a steadfast companion on every journey. Each pair of our chappals is meticulously crafted from premium materials, ensuring not only unparalleled durability but also exceptional comfort and style. Our commitment to quality means that whether you're navigating the bustling city streets or exploring new horizons, you can trust our chappals to stand the test of time.
+                            <div class="d-none d-lg-block d-md-block"><p  style="font-weight: 600;">Experience the perfect fusion of timeless craftsmanship and modern elegance with every step you take. Our chappals are designed to be your reliable partner, offering support and sophistication from sunrise to sunset. Embrace the journey with confidence and grace, knowing that Chennai Chappals will be there every step of the way.</p>  </div>
+
+                          </p>
+            </div>
+            <div class="col"></div>
+         </div>
+      </div>
+      <div class="container">
+        <h1 class="text-center">Explore Our Bestsellers</h1>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-lg-2">
+                <img src="./images/ec1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-2">
+                <img src="./images/ec2.png" alt="">
+            </div>
+            <div class="col-12 col-lg-2"></div>
+            <div class="col-12 col-lg-2"></div>
+        
+            <div class="col"></div>
+        </div>
+      </div>
+
+
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
 <script src="js/script.js"></script>
